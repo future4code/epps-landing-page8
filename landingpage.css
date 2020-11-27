@@ -12,8 +12,7 @@ header{
     height: 70px;
     width: 95%;
     margin: 20px;
-    text-align: right;
-        
+    text-align: right;        
 }
 
 .quemsomos{
@@ -135,11 +134,11 @@ main{
 
 /* fim da página */
 
-footer{
+/*footer{
     display: block;
     border: 1px solid rgb(212, 205, 205);
     border-radius: 5px 5px 0 0;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     width: 1000px;
     text-align: center;
@@ -147,8 +146,90 @@ footer{
     padding: 10px;
     background-color: rgb(228, 222, 219);
     
+}*/
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid rgb(212, 205, 205);
+    border-radius: 5px 5px 0 0;
+    background-color: rgb(228, 222, 219);
+}
+footer section {
+    justify-self: first baseline;
+    align-self: center;
+}
+footer h3 {
+    padding: 10px;
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
     
+     nav main {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5em;
+        
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 1%;
+    }
+    .quemsomos, .entregadores , .sejafranco {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        align-items: baseline;
+    } 
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 50%;
+        margin-left: 40%;
+    }
+    .conteudo p {
+        display: flex;
+    }
+
+    #descubra {
+        padding: 30%;
+    }
+
+    /*#busca-central {
+        display: flex;
+        width: 100px;
+        height: 20px;
+        padding: 5px 5px 5px 25px;
+
+    }*/
+
+    #logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    #entrar-topo {
+        display: flex;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    #comida-emcasa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        
+    } 
 }
+
