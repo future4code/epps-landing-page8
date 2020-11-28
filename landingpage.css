@@ -17,9 +17,12 @@ header{
 }
 
 .menu {
-    
+    /*align-items: center;
+    margin: 0px;*/
     align-items: center;
     margin: 0px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .quemsomos{
@@ -46,30 +49,39 @@ header{
     color: rgb(212, 203, 199);
     border: 0.5px solid gray;
 }
+.menu > p {
+    display: flex;
+    align-items: flex-end;
+}
 
 .logo {
     /* width: 150%;
-    margin: 0 0 20px 0; */
+    margin: 0 0 20px 0; 
     
 
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 200px;
-    width: 140%;
+    width: 140%;*/
 
 
-    /* z-index: 1; */
+     z-index: 3; 
+     display: flex;
+    /*flex-direction: column;*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    
     
 }
 
-#space-logo {
+/*#space-logo {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     
-}
+}*/
 
 button{
     background-color: rgb(97, 58, 37);
@@ -97,7 +109,7 @@ main{
     text-align: center;
     position: absolute;
     top: 40%;
-    left: 19%;
+    left: 25%;
     font-size: 40px;
 }
 
@@ -194,31 +206,33 @@ footer h3 {
     
 @media screen and (min-width: 200px) and (max-width: 600px) {
     
-     nav main {
+     .header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         font-size: 1.5em;
         
     }
     .menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding: 1% 1%;
+        margin-left: 20vh;
     }
+
     .quemsomos, .entregadores , .sejafranco {
         display: flex;
         flex-direction: column;
-        padding: 1%;
+        padding: 5%;
         align-items: baseline;
     } 
     .conteudo {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: space-around;
+        align-items: flex-end;
         margin-top: 50%;
-        margin-left: 40%;
+        margin-left: 30%;
     }
     .conteudo p {
         display: flex;
@@ -231,6 +245,9 @@ footer h3 {
     #logo {
         display: flex;
         justify-content: space-between;
+    }
+    .logo {
+        z-index: 10;
     }
 
     #entrar-topo {
