@@ -114,4 +114,61 @@ footer{
     padding: 10px;
     background-color: rgb(245, 237, 237);
     
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    
+     nav main {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5em;
+        
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 1%;
+    }
+    .quemsomos, .entregadores , .sejafranco {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        align-items: baseline;
+    } 
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 50%;
+        margin-left: 40%;
+    }
+    .conteudo p {
+        display: flex;
+    }
+
+    #descubra {
+        padding: 30%;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    #entrar-topo {
+        display: flex;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    #comida-emcasa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        
+    } 
 }
