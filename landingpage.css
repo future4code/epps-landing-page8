@@ -114,7 +114,8 @@ footer{
     padding: 10px;
     background-color: rgb(245, 237, 237);
     
-
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    
      nav main {
         display: flex;
         justify-content: space-between;
@@ -170,4 +171,4 @@ footer{
         flex-direction: column;
         
     } 
-
+}
