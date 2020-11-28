@@ -202,14 +202,6 @@ footer h3 {
         padding: 30%;
     }
 
-    /*#busca-central {
-        display: flex;
-        width: 100px;
-        height: 20px;
-        padding: 5px 5px 5px 25px;
-
-    }*/
-
     #logo {
         display: flex;
         justify-content: space-between;
